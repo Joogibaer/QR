@@ -2,7 +2,7 @@
 
 - Git 
 - npm LTS https://nodejs.org/en/download/
-- Angular https://cli.angular.io/
+- Angular CLI https://cli.angular.io/
 
 
 # Start
