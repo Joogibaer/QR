@@ -1,7 +1,7 @@
 # Download
 
 - Git 
-- npm LTS
+- npm LTS https://nodejs.org/en/download/
 - Angular https://cli.angular.io/
 - 
 
