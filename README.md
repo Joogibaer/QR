@@ -13,6 +13,8 @@ Open Terminal, navigate to dir and enter:
 
 Server will start at localhost:4200
 
+https://docs.npmjs.com/cli/start.html
+
 
 # Git Commands
 
