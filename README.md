@@ -17,7 +17,7 @@ Server will start at localhost:4200
 # Git Commands
 
 - git init //will create git dir
-- git add "filename" // will add all files
+- git add "filename" // will add new files
 - git commit -m "message" 
 - git push "path"
 
