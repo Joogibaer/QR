@@ -13,11 +13,13 @@ Open Terminal, navigate to dir and enter:
 
 Server will start at localhost:4200
 
+
 # Git Commands
 
 - git init //will create git dir
 - git commit -m "message" 
 - git push "path"
 
+https://git-scm.com/downloads/guis
 
 
