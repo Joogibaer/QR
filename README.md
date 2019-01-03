@@ -20,6 +20,10 @@ Server will start at localhost:4200
 - git commit -m "message" 
 - git push "path"
 
-https://git-scm.com/downloads/guis
+ https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
+# Git GUI's
+
+- https://git-scm.com/downloads/guis
 
 
