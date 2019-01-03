@@ -17,8 +17,9 @@ Server will start at localhost:4200
 # Git Commands
 
 - git init //will create git dir
+- git add <filename> // will add all files
 - git commit -m "message" 
-- git push "path"
+- git push <path>
 
  https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
 
