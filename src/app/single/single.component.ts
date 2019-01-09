@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'single',
+  //selector: 'single',
   templateUrl: './single.component.html',
 
 })
