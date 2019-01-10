@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav/navbar.component';
 import { SingleComponent } from './single/single.component';
-import { appRoutes } from './routes';
+
 
 @NgModule({
   declarations: [
