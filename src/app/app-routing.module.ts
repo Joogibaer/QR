@@ -10,6 +10,7 @@ const routes: Routes = [
     { path: 'bulk', component: BulkComponent },
     { path: 'about', component: AboutComponent },
     { path: 'home', component: HomeComponent },
+    { path: '', component: HomeComponent },
 ];
 
 @NgModule({
