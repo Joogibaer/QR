@@ -1,0 +1,121 @@
+<div>
+
+<div>
+</div>
+
+<div>
+    <ul class="left">
+      <p>Recipent</p>
+       <li>
+         <mat-form-field>
+           <textarea matInput placeholder="Account"></textarea>
+         </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="Reference"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="Name"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="Street"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="House number"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="ZIP"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="City"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <mat-select placeholder="Country">
+            <mat-option *ngFor='let value of country; trackBy: index;'value="Null">
+          {{ value }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="Informations"></textarea>
+        </mat-form-field>
+      </li>
+    </ul>
+</div>
+<div>
+    <ul class="right">
+      <p>Payer</p>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="Name"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="Street"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="House number"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="ZIP"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="City"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <mat-select placeholder="Country">
+            <mat-option *ngFor='let value of country; trackBy: index;'value="Null">
+          {{ value }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="Due date"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <mat-select  placeholder="Currency" [(ngModel)]="selectetCurrency">
+            <mat-option *ngFor='let value of currency; trackBy: index;'value="value">
+          {{ value }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        </li>
+        <li>
+        <mat-form-field>
+          <input matInput placeholder="Amount" type="number">
+          <span matPrefix>$&nbsp;</span>
+        </mat-form-field>
+      </li>
+    </ul>
+</div>
+ <p> Selected currency: {{selectedCurrency}} </p>
+
+<!--https://gist.github.com/soul-wish/8030172-->
+<!--https://qrcoderechnung.ch/qr-->
+
+</div>

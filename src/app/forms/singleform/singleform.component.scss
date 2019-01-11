@@ -1,0 +1,33 @@
+.form-container{
+ display: grid;
+ grid-template-columns: 33% 33% 33%;
+ grid-gap: 10px;
+ padding:10px;
+ background-color: orange;
+  //float:right;
+  //width: 60%;
+  //height: 200px;
+  //margin-left: 2%;
+  //margin-right:2%;
+  //https://css-tricks.com/snippets/css/complete-guide-grid/
+}
+.form-container >div{
+  background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+ul{
+  list-style-type:none;
+}
+p{
+  text-align: center;
+}
+
+.right{
+  float:right;
+}
+.left{
+  float:left;
+}
