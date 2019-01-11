@@ -34,6 +34,9 @@ https://docs.npmjs.com/cli/start.html
 - npm install --save @angular/material
 
 - npm install --save @angular/cdk
+-
+- ng add @angular/material
 
 - restart dev server
+
 
