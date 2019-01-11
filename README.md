@@ -29,4 +29,11 @@ https://docs.npmjs.com/cli/start.html
 
 - https://git-scm.com/downloads/guis
 
+# In case of missing packages
+
+- npm install --save @angular/material
+
+- npm install --save @angular/cdk
+
+- restart dev server
 
