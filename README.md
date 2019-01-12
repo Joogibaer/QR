@@ -1,6 +1,6 @@
 # Download
 
-- Git 
+- Git
 - npm LTS https://nodejs.org/en/download/
 - Angular CLI https://cli.angular.io/
 
@@ -20,7 +20,7 @@ https://docs.npmjs.com/cli/start.html
 
 - git init //will create git dir
 - git add "filename" // will add new files
-- git commit -m "message" 
+- git commit -m "message"
 - git push "path"
 
  https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
@@ -38,5 +38,3 @@ https://docs.npmjs.com/cli/start.html
 - ng add @angular/material
 
 - restart dev server
-
-

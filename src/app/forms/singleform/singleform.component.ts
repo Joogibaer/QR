@@ -11,15 +11,17 @@ import { Component } from '@angular/core';
 export class SingleFormComponent{
   selectetCurrency: string;
 
+
+
   //https://material.angular.io/components/select/overview
 
-  public currency: text[]=[
+  public currency: string[]=[
     "SFR",
     "EURO",
     "USD",
   ]
 
-  public country:text[]= [
+  public country: string[]=[
       "United States",
       "United Kingdom",
       "Afghanistan",
