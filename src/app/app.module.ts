@@ -12,6 +12,7 @@ import { BulkComponent } from './bulk/bulk.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { SingleFormComponent } from './forms/singleform/singleform.component';
+import { BulkFormComponent } from './forms/bulkform/bulkform.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SingleFormComponent } from './forms/singleform/singleform.component';
     AboutComponent,
     HomeComponent,
     SingleFormComponent,
+    BulkFormComponent,
   ],
   imports: [
     BrowserModule,
