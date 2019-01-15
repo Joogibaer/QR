@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 
 
+
 @Component({
   selector: 'singleform',
   templateUrl: './singleform.component.html',
@@ -9,19 +10,42 @@ import { Component } from '@angular/core';
 
 })
 export class SingleFormComponent{
-  selectetCurrency: string;
+  selectetCurrency: string
+  currency:string
+
+  invoice = {
+    creditorAccount:"",
+    creditorReference:"",
+    creditorName:"",
+    creditorStreet:"",
+    creditorHouseNumber:"",
+    creditorZip:"",
+    creditorCity:"",
+    creditorCountry:"",
+    creditorInformations:"",
+    debtorName:"",
+    debtorStreet:"",
+    debtorHouseNumber:"",
+    debtorZip:"",
+    debtorCity:"",
+    debtorCountry:"",
+    debtorDueDate:"",
+    debtorCurrency:"",
+    debtorAmount:"",
+
+  }
 
 
 
   //https://material.angular.io/components/select/overview
 
-  public currency: string[]=[
+  public currencys: string[]=[
     "SFR",
     "EURO",
     "USD",
   ]
 
-  public country: string[]=[
+  public countrys: string[]=[
       "United States",
       "United Kingdom",
       "Afghanistan",

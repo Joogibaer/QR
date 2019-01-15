@@ -1,121 +1,141 @@
 <div>
 
-<div>
-</div>
+  <div>
+  </div>
 
-<div>
+  <div>
     <ul class="left">
-      <p>Recipent</p>
-       <li>
-         <mat-form-field>
-           <textarea matInput placeholder="Account"></textarea>
-         </mat-form-field>
-      </li>
+      <p>Creditor</p>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Reference"></textarea>
+          <textarea matInput placeholder="Account" [(ngModel)]="invoice.creditorAccount"></textarea>
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Name"></textarea>
+          <textarea matInput placeholder="Reference" [(ngModel)]="invoice.creditorReference"></textarea>
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Street"></textarea>
+          <textarea matInput placeholder="Name" [(ngModel)]="invoice.creditorName"></textarea>
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="House number"></textarea>
+          <textarea matInput placeholder="Street" [(ngModel)]="invoice.creditorStreet"></textarea>
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="ZIP"></textarea>
+          <textarea matInput placeholder="House number" [(ngModel)]="invoice.creditorHouseNumber"></textarea>
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="City"></textarea>
+          <textarea matInput placeholder="ZIP" [(ngModel)]="invoice.creditorZip"></textarea>
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <mat-select placeholder="Country">
-            <mat-option *ngFor='let value of country; trackBy: index;'value="Null">
-          {{ value }}</mat-option>
+          <textarea matInput placeholder="City" [(ngModel)]="invoice.creditorCity"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <mat-select placeholder="Country" [(ngModel)]="invoice.creditorCountry">
+            <mat-option *ngFor='let value of countrys; trackBy: index;' value="{{ value }}">
+              {{ value }}</mat-option>
           </mat-select>
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Informations"></textarea>
+          <textarea matInput placeholder="Informations" [(ngModel)]="invoice.creditorInformations"></textarea>
         </mat-form-field>
       </li>
     </ul>
-</div>
-<div>
-    <ul class="right">
-      <p>Payer</p>
-      <li>
-        <mat-form-field>
-          <textarea matInput placeholder="Name"></textarea>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <textarea matInput placeholder="Street"></textarea>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <textarea matInput placeholder="House number"></textarea>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <textarea matInput placeholder="ZIP"></textarea>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <textarea matInput placeholder="City"></textarea>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <mat-select placeholder="Country">
-            <mat-option *ngFor='let value of country; trackBy: index;'value="Null">
-          {{ value }}</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <textarea matInput placeholder="Due date"></textarea>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <mat-select  placeholder="Currency" [(ngModel)]="selectetCurrency">
-            <mat-option *ngFor='let value of currency; trackBy: index;'value="value">
-          {{ value }}</mat-option>
-          </mat-select>
-        </mat-form-field>
-        </li>
-        <li>
-        <mat-form-field>
-          <input matInput placeholder="Amount" type="number">
-          <span matPrefix>$&nbsp;</span>
-        </mat-form-field>
-      </li>
-    </ul>
-</div>
- <p> Selected currency: {{selectedCurrency}} </p>
+  </div>
 
-<!--https://gist.github.com/soul-wish/8030172-->
-<!--https://qrcoderechnung.ch/qr-->
+  <div>
+    <ul class="right">
+      <p>Debtor</p>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="Name" [(ngModel)]="invoice.debtorName"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="Street" [(ngModel)]="invoice.debtorStreet"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="House number" [(ngModel)]="invoice.debtorHouseNumber"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="ZIP" [(ngModel)]="invoice.debtorZip"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="City" [(ngModel)]="invoice.debtorCity"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <mat-select placeholder="Country" [(ngModel)]="invoice.debtorCountry">
+            <mat-option *ngFor='let value of countrys; trackBy: index;' value="{{ value }}">
+              {{ value }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <textarea matInput placeholder="Due date" [(ngModel)]="name" [(ngModel)]="invoice.debtorDueDate"></textarea>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <mat-select placeholder="Currency" [(ngModel)]="invoice.debtorCurrency">
+            <mat-option *ngFor='let value of currencys; trackBy: index;' value="{{ value }}">
+              {{ value }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field>
+          <input matInput placeholder="Amount" type="number" [(ngModel)]="invoice.debtorAmount">
+          <span matPrefix>{{currency}}&nbsp;</span>
+        </mat-form-field>
+      </li>
+    </ul>
+  </div>
+
+  <!--Testing Form-->
+  <p style=font-weight:bold>Creditor</p>
+  <p> account: {{invoice.creditorAccount}} </p>
+  <p> reference: {{invoice.creditorReference}} </p>
+  <p> name: {{invoice.creditorName}} </p>
+  <p> street: {{invoice.creditorStreet}} </p>
+  <p> number: {{invoice.creditorHouseNumber}} </p>
+  <p> zip: {{invoice.creditorZip}} </p>
+  <p> city: {{invoice.creditorCity}} </p>
+  <p> country: {{invoice.creditorCountry}} </p>
+  <p> info: {{invoice.creditorInformations}} </p>
+  <br>
+  <<p style=font-weight:bold>Debtor</p>
+  <p> name: {{invoice.debtorName}} </p>
+  <p> street: {{invoice.debtorStreet}} </p>
+  <p> number: {{invoice.debtorHouseNumber}} </p>
+  <p> zip: {{invoice.debtorZip}} </p>
+  <p> city: {{invoice.debtorCity}} </p>
+  <p> country: {{invoice.debtorCountry}} </p>
+  <p> duedate: {{invoice.debtorDueDate}} </p>
+  <p> currency: {{invoice.debtorCurrency}} </p>
+  <p> amount: {{invoice.debtorAmount}} </p>
 
 </div>
