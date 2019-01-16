@@ -1,6 +1,8 @@
-<div>
+<div class=form-container>
 
   <div>
+
+
   </div>
 
   <div>
@@ -8,37 +10,37 @@
       <p>Creditor</p>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Account" [(ngModel)]="invoice.creditorAccount"></textarea>
+          <input matInput placeholder="Account" [(ngModel)]="invoice.creditorAccount">
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Reference" [(ngModel)]="invoice.creditorReference"></textarea>
+          <input matInput placeholder="Reference" [(ngModel)]="invoice.creditorReference">
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Name" [(ngModel)]="invoice.creditorName"></textarea>
+          <input matInput placeholder="Name" [(ngModel)]="invoice.creditorName">
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Street" [(ngModel)]="invoice.creditorStreet"></textarea>
+          <input matInput placeholder="Street" [(ngModel)]="invoice.creditorStreet">
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="House number" [(ngModel)]="invoice.creditorHouseNumber"></textarea>
+          <input matInput placeholder="House number" [(ngModel)]="invoice.creditorHouseNumber">
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="ZIP" [(ngModel)]="invoice.creditorZip"></textarea>
+          <input matInput placeholder="ZIP" [(ngModel)]="invoice.creditorZip">
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="City" [(ngModel)]="invoice.creditorCity"></textarea>
+          <input matInput placeholder="City" [(ngModel)]="invoice.creditorCity">
         </mat-form-field>
       </li>
       <li>
@@ -51,7 +53,7 @@
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Informations" [(ngModel)]="invoice.creditorInformations"></textarea>
+          <input matInput placeholder="Informations" [(ngModel)]="invoice.creditorInformations">
         </mat-form-field>
       </li>
     </ul>
@@ -62,29 +64,30 @@
       <p>Debtor</p>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Name" [(ngModel)]="invoice.debtorName"></textarea>
+          <input matInput placeholder="Name" [(ngModel)]="invoice.debtorName">
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Street" [(ngModel)]="invoice.debtorStreet"></textarea>
+          <input matInput placeholder="Street" [(ngModel)]="invoice.debtorStreet">
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="House number" [(ngModel)]="invoice.debtorHouseNumber"></textarea>
+          <input matInput placeholder="House number" [(ngModel)]="invoice.debtorHouseNumber">
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="ZIP" [(ngModel)]="invoice.debtorZip"></textarea>
+          <input matInput placeholder="ZIP" [(ngModel)]="invoice.debtorZip">
         </mat-form-field>
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="City" [(ngModel)]="invoice.debtorCity"></textarea>
+          <input matInput placeholder="City" [(ngModel)]="invoice.debtorCity">
         </mat-form-field>
       </li>
+
       <li>
         <mat-form-field>
           <mat-select placeholder="Country" [(ngModel)]="invoice.debtorCountry">
@@ -95,7 +98,7 @@
       </li>
       <li>
         <mat-form-field>
-          <textarea matInput placeholder="Due date" [(ngModel)]="name" [(ngModel)]="invoice.debtorDueDate"></textarea>
+          <input matInput placeholder="Due date" [(ngModel)]="name" [(ngModel)]="invoice.debtorDueDate">
         </mat-form-field>
       </li>
       <li>
@@ -116,6 +119,7 @@
   </div>
 
   <!--Testing Form-->
+  <!--
   <p style=font-weight:bold>Creditor</p>
   <p> account: {{invoice.creditorAccount}} </p>
   <p> reference: {{invoice.creditorReference}} </p>
@@ -137,5 +141,6 @@
   <p> duedate: {{invoice.debtorDueDate}} </p>
   <p> currency: {{invoice.debtorCurrency}} </p>
   <p> amount: {{invoice.debtorAmount}} </p>
-
+  <p> class: {{message}} </p>
+-->
 </div>

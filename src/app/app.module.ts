@@ -14,7 +14,6 @@ import { HomeComponent } from './home/home.component';
 import { SingleFormComponent } from './forms/singleform/singleform.component';
 import { BulkFormComponent } from './forms/bulkform/bulkform.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

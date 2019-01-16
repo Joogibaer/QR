@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { Invoice } from '../../shared/models/invoice.model';
 
 
 
@@ -9,9 +9,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./singleform.component.scss'],
 
 })
-export class SingleFormComponent{
-  selectetCurrency: string
-  currency:string
+export class SingleFormComponent implements OnInit{
+
+  ngOnInit() {
+
+  }
+
 
   invoice = {
     creditorAccount:"",
