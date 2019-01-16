@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MatFormFieldModule, MatInputModule, MatSelectModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { SingleFormComponent } from './forms/singleform/singleform.component';
 import { BulkFormComponent } from './forms/bulkform/bulkform.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,9 +27,11 @@ import { BulkFormComponent } from './forms/bulkform/bulkform.component';
     HomeComponent,
     SingleFormComponent,
     BulkFormComponent,
+
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     MatFormFieldModule,
     MatInputModule,

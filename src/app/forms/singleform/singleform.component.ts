@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Invoice } from '../../shared/models/invoice.model';
-
-
+import { Injectable } from "@angular/core";
+import { InvoiceModel } from '../../models/invoice.model'
 
 @Component({
   selector: 'singleform',
@@ -10,33 +9,12 @@ import { Invoice } from '../../shared/models/invoice.model';
 
 })
 export class SingleFormComponent implements OnInit{
+invoiceModel:InvoiceModel = new InvoiceModel();
 
   ngOnInit() {
-
+  
   }
 
-
-  invoice = {
-    creditorAccount:"",
-    creditorReference:"",
-    creditorName:"",
-    creditorStreet:"",
-    creditorHouseNumber:"",
-    creditorZip:"",
-    creditorCity:"",
-    creditorCountry:"",
-    creditorInformations:"",
-    debtorName:"",
-    debtorStreet:"",
-    debtorHouseNumber:"",
-    debtorZip:"",
-    debtorCity:"",
-    debtorCountry:"",
-    debtorDueDate:"",
-    debtorCurrency:"",
-    debtorAmount:"",
-
-  }
 
 
 
