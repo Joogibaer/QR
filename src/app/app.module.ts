@@ -4,6 +4,7 @@ import { MatFormFieldModule, MatInputModule, MatSelectModule } from '@angular/ma
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { BulkFormComponent } from './forms/bulkform/bulkform.component';
     SingleFormComponent,
     BulkFormComponent,
 
+
   ],
   imports: [
     BrowserModule,
@@ -38,6 +40,7 @@ import { BulkFormComponent } from './forms/bulkform/bulkform.component';
     BrowserAnimationsModule,
     MatSelectModule,
     FormsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [
