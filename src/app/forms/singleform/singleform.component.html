@@ -1,144 +1,155 @@
 <div class=form-container>
-
-  <div>
-    <!--Testing Form-->
-    <p style=font-weight:bold>Creditor</p>
-    <p> account: {{invoiceModel.creditorAccount}} </p>
-    <p> reference: {{invoiceModel.creditorReference}} </p>
-    <p> name: {{invoiceModel.creditorName}} </p>
-    <p> street: {{invoiceModel.creditorStreet}} </p>
-    <p> number: {{invoiceModel.creditorHouseNumber}} </p>
-    <p> zip: {{invoiceModel.creditorZip}} </p>
-    <p> city: {{invoiceModel.creditorCity}} </p>
-    <p> country: {{invoiceModel.creditorCountry}} </p>
-    <p> info: {{invoiceModel.creditorInformations}} </p>
-</div>
+  <section>
     <div>
-    <p style=font-weight:bold>Debtor</p>
-    <p> name: {{invoiceModel.debtorName}} </p>
-    <p> street: {{invoiceModel.debtorStreet}} </p>
-    <p> number: {{invoiceModel.debtorHouseNumber}} </p>
-    <p> zip: {{invoiceModel.debtorZip}} </p>
-    <p> city: {{invoiceModel.debtorCity}} </p>
-    <p> country: {{invoiceModel.debtorCountry}} </p>
-    <p> duedate: {{invoiceModel.debtorDueDate}} </p>
-    <p> currency: {{invoiceModel.debtorCurrency}} </p>
-    <p> amount: {{invoiceModel.debtorAmount}} </p>
-  </div>
+      <!--Testing Form-->
+      <p style=font-weight:bold>Creditor</p>
+      <p> account: {{invoiceModel.creditorAccount}} </p>
+      <p> reference: {{invoiceModel.creditorReference}} </p>
+      <p> name: {{invoiceModel.creditorName}} </p>
+      <p> street: {{invoiceModel.creditorStreet}} </p>
+      <p> number: {{invoiceModel.creditorHouseNumber}} </p>
+      <p> zip: {{invoiceModel.creditorZip}} </p>
+      <p> city: {{invoiceModel.creditorCity}} </p>
+      <p> country: {{invoiceModel.creditorCountry}} </p>
+      <p> info: {{invoiceModel.creditorInformations}} </p>
+    </div>
 
-  <div>
-    <ul class="left">
-      <p>Creditor</p>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="Account" [(ngModel)]="invoiceModel.creditorAccount" required>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="Reference" [(ngModel)]="invoiceModel.creditorReference" required>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="Name" [(ngModel)]="invoiceModel.creditorName" required>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="Street" [(ngModel)]="invoiceModel.creditorStreet" required>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="House number" [(ngModel)]="invoiceModel.creditorHouseNumber" required>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="ZIP" [(ngModel)]="invoiceModel.creditorZip" required>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="City" [(ngModel)]="invoiceModel.creditorCity" required>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <mat-select placeholder="Country" [(ngModel)]="invoiceModel.creditorCountry" required>
-            <mat-option *ngFor='let value of countrys; trackBy: index;' value="{{ value }}">
-              {{ value }}</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="Informations" [(ngModel)]="invoiceModel.creditorInformations">
-        </mat-form-field>
-      </li>
-    </ul>
-  </div>
+  </section>
 
-  <div>
-    <ul class="right">
-      <p>Debtor</p>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="Name" [(ngModel)]="invoiceModel.debtorName" required>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="Street" [(ngModel)]="invoiceModel.debtorStreet" required>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="House number" [(ngModel)]="invoiceModel.debtorHouseNumber" required>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="ZIP" [(ngModel)]="invoiceModel.debtorZip" required>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="City" [(ngModel)]="invoiceModel.debtorCity" required>
-        </mat-form-field>
-      </li>
+  <section>
+    <div>
+      <p style=font-weight:bold>Debtor</p>
+      <p> name: {{invoiceModel.debtorName}} </p>
+      <p> street: {{invoiceModel.debtorStreet}} </p>
+      <p> number: {{invoiceModel.debtorHouseNumber}} </p>
+      <p> zip: {{invoiceModel.debtorZip}} </p>
+      <p> city: {{invoiceModel.debtorCity}} </p>
+      <p> country: {{invoiceModel.debtorCountry}} </p>
+      <p> duedate: {{invoiceModel.debtorDueDate}} </p>
+      <p> currency: {{invoiceModel.debtorCurrency}} </p>
+      <p> amount: {{invoiceModel.debtorAmount}} </p>
+    </div>
+  </section>
 
-      <li>
-        <mat-form-field>
-          <mat-select placeholder="Country" [(ngModel)]="invoiceModel.debtorCountry" required>
-            <mat-option *ngFor='let value of countrys; trackBy: index;' value="{{ value }}">
-              {{ value }}</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="Due date" [(ngModel)]="name" [(ngModel)]="invoiceModel.debtorDueDate">
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <mat-select placeholder="Currency" [(ngModel)]="invoiceModel.debtorCurrency" required>
-            <mat-option *ngFor='let value of currencys; trackBy: index;' value="{{ value }}">
-              {{ value }}</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </li>
-      <li>
-        <mat-form-field>
-          <input matInput placeholder="Amount" type="number" OnlyNumber="true"  [(ngModel)]="invoiceModel.debtorAmount" required>
-          <span matPrefix>{{currency}}&nbsp;</span>
-        </mat-form-field>
-      </li>
-    </ul>
+  <section>
+    <div>
+      <ul class="left">
+        <p>Creditor</p>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="Account" [(ngModel)]="invoiceModel.creditorAccount" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="Reference" [(ngModel)]="invoiceModel.creditorReference" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="Name" [(ngModel)]="invoiceModel.creditorName" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="Street" [(ngModel)]="invoiceModel.creditorStreet" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="House number" [(ngModel)]="invoiceModel.creditorHouseNumber" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="ZIP" [(ngModel)]="invoiceModel.creditorZip" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="City" [(ngModel)]="invoiceModel.creditorCity" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <mat-select placeholder="Country" [(ngModel)]="invoiceModel.creditorCountry" required>
+              <mat-option *ngFor='let value of countrys; trackBy: index;' value="{{ value }}">
+                {{ value }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="Informations" [(ngModel)]="invoiceModel.creditorInformations">
+          </mat-form-field>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-  </div>
+  <section>
+    <div>
+      <ul class="right">
+        <p>Debtor</p>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="Name" [(ngModel)]="invoiceModel.debtorName" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="Street" [(ngModel)]="invoiceModel.debtorStreet" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="House number" [(ngModel)]="invoiceModel.debtorHouseNumber" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="ZIP" [(ngModel)]="invoiceModel.debtorZip" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="City" [(ngModel)]="invoiceModel.debtorCity" required>
+          </mat-form-field>
+        </li>
+
+        <li>
+          <mat-form-field>
+            <mat-select placeholder="Country" [(ngModel)]="invoiceModel.debtorCountry" required>
+              <mat-option *ngFor='let value of countrys; trackBy: index;' value="{{ value }}">
+                {{ value }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="Due date" [(ngModel)]="name" [(ngModel)]="invoiceModel.debtorDueDate">
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <mat-select placeholder="Currency" [(ngModel)]="invoiceModel.debtorCurrency" required>
+              <mat-option *ngFor='let value of currencys; trackBy: index;' value="{{ value }}">
+                {{ value }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field>
+            <input matInput placeholder="Amount" type="number" OnlyNumber="true" [(ngModel)]="invoiceModel.debtorAmount" required>
+            <span matPrefix>{{currency}}&nbsp;</span>
+          </mat-form-field>
+        </li>
+      </ul>
+
+    </div>
+
+
+  </section>
 
 
 
