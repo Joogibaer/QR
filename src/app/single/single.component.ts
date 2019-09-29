@@ -11,13 +11,27 @@ import { HttpClient, HttpHeaders, HttpHandler } from '@angular/common/http';
 export class SingleComponent {
   constructor(private httpClient: HttpClient){}
 
-    url="192.168.1.30:8080/bill";
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json'
+    })
+  }
+    url="http://192.168.1.30:8080/bill";
 
   getBill() {
-    this.httpClient.get(this.url)
+    console.log("GetBill")
+console.log(
+    this.httpClient.get(this.url,this.httpOptions)
+  )
+  this.httpClient.get(this.url,this.httpOptions).subscribe((res)=>{
+            console.log(res);
+        });
+
   }
 
-
+test(){
+  console.log("test function");
+}
 
 
 
