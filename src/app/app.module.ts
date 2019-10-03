@@ -15,6 +15,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { SingleFormComponent } from './forms/singleform/singleform.component';
 import { BulkFormComponent } from './forms/bulkform/bulkform.component';
+import { SendRequestService } from './services/sendrequest.service';
 
 
 
@@ -42,7 +43,9 @@ import { BulkFormComponent } from './forms/bulkform/bulkform.component';
     FormsModule,
     MatButtonModule,
   ],
-  providers: [],
+  providers: [
+    SendRequestService,
+  ],
   bootstrap: [
     AppComponent,
   ]

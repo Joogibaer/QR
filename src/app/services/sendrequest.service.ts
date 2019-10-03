@@ -2,9 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpHandler } from '@angular/common/http';
 
 
-@Injectable()
-export class ConfigService {
-private http: HttpClient
+@Injectable({
+  providedIn: 'root',
+})
+
+
+export class SendRequestService {
 
   constructor(private httpClient: HttpClient){}
 
@@ -14,12 +17,20 @@ private http: HttpClient
           'Content-Type': 'application/json'
         })
       }
-      url="192.168.1.30:8080/bill";
+    url="http://192.168.1.30:8080/bill";
 
-    getBill() {
-      console.log("test")
-      console.log(
-      this.httpClient.get(this.url)
-    )
-    }
+      getBill() {
+        console.log("GetBill")
+    console.log(
+        this.httpClient.get(this.url,this.httpOptions)
+      )
+      this.httpClient.get(this.url,this.httpOptions).subscribe((res)=>{
+                console.log(res);
+            });
+
+      }
+
+      test(){
+        console.log("test function");
+      }
 }
