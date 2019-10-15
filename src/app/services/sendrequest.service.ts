@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpHandler } from '@angular/common/http';
-
+import { SingleFormComponent } from '../forms/singleform/singleform.component'
 
 @Injectable({
   providedIn: 'root',
@@ -8,8 +8,12 @@ import { HttpClient, HttpHeaders, HttpHandler } from '@angular/common/http';
 
 
 export class SendRequestService {
+  //invoiceModel:InvoiceModel = new InvoiceModel();
+  singleForm:SingleFormComponent = new SingleFormComponent()
+  constructor(
+    private httpClient: HttpClient,
 
-  constructor(private httpClient: HttpClient){}
+  ){}
 
     // Http Options
       httpOptions = {
@@ -18,6 +22,7 @@ export class SendRequestService {
         })
       }
     url="http://192.168.1.30:8080/bill";
+  //    url="http://dummy.restapiexample.com/api/v1/employees"
 
       getBill() {
         console.log("GetBill")
@@ -30,7 +35,7 @@ export class SendRequestService {
 
       }
 
-      test(){
-        console.log("test function");
+      Generate(){
+        console.log(this.singleForm.invoiceModel.creditorAccount);
       }
 }

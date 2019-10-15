@@ -10,9 +10,8 @@ import { InvoiceModel } from '../../models/invoice.model'
 })
 export class SingleFormComponent implements OnInit{
 invoiceModel:InvoiceModel = new InvoiceModel();
-
   ngOnInit() {
-  
+
   }
 
 
