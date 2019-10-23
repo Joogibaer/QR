@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpHandler } from '@angular/common/http';
 import { SendRequestService } from '../services/sendrequest.service';
 //https://stackoverflow.com/questions/45741480/how-to-use-angular-injectable-with-a-function-not-a-class
-import { InvoiceModel } from '../models/invoice.model'
+import { InvoiceModel } from '../models/invoice.model';
 
 @Component({
   templateUrl: './single.component.html',
@@ -16,12 +16,13 @@ export class SingleComponent {
 
   ){}
 
+ invoiceModel = new InvoiceModel();
 
 getBill(){
   this.sendRequestService.getBill();
 }
-Generate(){
-  this.sendRequestService.Generate();
+postBill(){
+  this.sendRequestService.postBill();
 }
 
 }

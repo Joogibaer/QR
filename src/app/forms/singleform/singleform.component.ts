@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Injectable } from "@angular/core";
-import { InvoiceModel } from '../../models/invoice.model'
+import { InvoiceModel } from '../../models/invoice.model';
+
 
 @Component({
   selector: 'singleform',
@@ -8,8 +9,14 @@ import { InvoiceModel } from '../../models/invoice.model'
   styleUrls: ['./singleform.component.scss'],
 
 })
+@Injectable()
 export class SingleFormComponent implements OnInit{
 invoiceModel:InvoiceModel = new InvoiceModel();
+
+getInvoiceModel(){
+  return this.invoiceModel;
+}
+
   ngOnInit() {
 
   }

@@ -33,10 +33,11 @@
     </div>
   </section>
 -->
+
   <section>
     <div>
       <ul class="left">
-        <p>Creditor</p>
+        <p>Creditor</p> <p >{{ invoiceModel.creditorAccount }}</p>
         <li>
           <mat-form-field>
             <input matInput placeholder="Account" [(ngModel)]="invoiceModel.creditorAccount" required>

@@ -45,6 +45,7 @@ import { SendRequestService } from './services/sendrequest.service';
   ],
   providers: [
     SendRequestService,
+    SingleFormComponent,
   ],
   bootstrap: [
     AppComponent,
