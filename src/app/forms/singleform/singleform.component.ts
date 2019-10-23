@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Injectable } from "@angular/core";
 import { InvoiceModel } from '../../models/invoice.model';
+import { InvoiceService } from '../../services/invoice.service';
 
 
 @Component({
@@ -11,17 +12,21 @@ import { InvoiceModel } from '../../models/invoice.model';
 })
 @Injectable()
 export class SingleFormComponent implements OnInit{
-invoiceModel:InvoiceModel = new InvoiceModel();
+//invoiceModel:InvoiceModel = new InvoiceModel();
 
-getInvoiceModel(){
-  return this.invoiceModel;
-}
+  invoiceData:InvoiceModel;
+
+  constructor(private data: InvoiceService) { }
+
 
   ngOnInit() {
-
+    this.data.invoiceData.subscribe(invoiceData => this.invoiceData = invoiceData)
   }
 
 
+  newMessage() {
+    this.data.updatedDataSelection(this.invoiceData)
+  }
 
 
   //https://material.angular.io/components/select/overview

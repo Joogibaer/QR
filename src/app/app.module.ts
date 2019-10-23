@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { SingleFormComponent } from './forms/singleform/singleform.component';
 import { BulkFormComponent } from './forms/bulkform/bulkform.component';
 import { SendRequestService } from './services/sendrequest.service';
+import { InvoiceService } from './services/invoice.service';
 
 
 
@@ -46,6 +47,7 @@ import { SendRequestService } from './services/sendrequest.service';
   providers: [
     SendRequestService,
     SingleFormComponent,
+    InvoiceService,
   ],
   bootstrap: [
     AppComponent,

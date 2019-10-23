@@ -1,7 +1,8 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpHandler } from '@angular/common/http';
-import { SingleFormComponent } from '../forms/singleform/singleform.component';
+
 import { InvoiceModel } from '../models/invoice.model';
+import { InvoiceService } from '../services/invoice.service';
 
 
 
@@ -9,15 +10,17 @@ import { InvoiceModel } from '../models/invoice.model';
 @Injectable({
   providedIn: 'root',
 })
-export class SendRequestService {
-
-
-
+export class SendRequestService implements OnInit{
+invoiceData:InvoiceModel;
   constructor(
     private httpClient: HttpClient,
-    private singleFormComponent: SingleFormComponent,
-
+    private data: InvoiceService,
   ){}
+
+  ngOnInit() {
+      this.data.invoiceData.subscribe(invoiceData => this.invoiceData = invoiceData)
+    }
+
 
 
     // Http Options
@@ -45,7 +48,8 @@ export class SendRequestService {
         //var invoiceModel  = new InvoiceModel();
         console.log("PostBill")
         console.log(
-        this.singleFormComponent.invoiceModel.creditorAccount
+      //  this.singleFormComponent.invoiceModel.creditorAccount
+        this.invoiceData.creditorAccount
 
 
 
