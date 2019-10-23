@@ -45,25 +45,12 @@ invoiceData:InvoiceModel;
 
 
       postBill() {
-        //var invoiceModel  = new InvoiceModel();
         console.log("PostBill")
         console.log(
       //  this.singleFormComponent.invoiceModel.creditorAccount
         this.invoiceData.creditorAccount
 
 
-
-
         );
-  //  console.log(
-  //      this.httpClient.post(this.url,InvoiceModel,this.httpOptions)
-  //    )
-  //    this.httpClient.post(this.url,InvoiceModel,this.httpOptions).subscribe((res)=>{
-  //              console.log(res);
-  //          });
-      }
-
-      Generate(){
-        console.log("Generate");
       }
 }

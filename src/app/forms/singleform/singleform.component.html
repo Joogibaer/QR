@@ -40,7 +40,7 @@
         <p>Creditor</p> <p >{{ invoiceData.creditorAccount }}</p>
         <li>
           <mat-form-field>
-            <input matInput placeholder="Account" [(ngModel)]="invoiceData.creditorAccount" required>
+            <input matInput placeholder="Account"  [(ngModel)]="invoiceData.creditorAccount" (change)="updateInvoice()" required>
           </mat-form-field>
         </li>
         <li>

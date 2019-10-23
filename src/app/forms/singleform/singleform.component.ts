@@ -24,8 +24,9 @@ export class SingleFormComponent implements OnInit{
   }
 
 
-  newMessage() {
-    this.data.updatedDataSelection(this.invoiceData)
+  updateInvoice() {
+  //  this.data.updatedDataSelection(this.invoiceData)
+    console.log("updateInvoice")
   }
 
 

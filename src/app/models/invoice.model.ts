@@ -1,6 +1,6 @@
 export class InvoiceModel {
 
-     creditorAccount:string="äääuäää";
+     creditorAccount:string;
      creditorReference:string;
      creditorName:string;
      creditorStreet:string;
